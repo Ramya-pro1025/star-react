@@ -1,0 +1,112 @@
+/* Basic CSS styling for the whole page */
+body {
+    margin: 0; /* Remove any default margin */
+    font-family: 'Arial', sans-serif; /* Set a simple font for the page */
+    background-color: #1a202c; /* Set dark background color */
+    color: white; /* Set text color to white for readability */
+  }
+
+  /* Style for the navigation bar at the top */
+  nav {
+    background-color: #2d3748; /* Dark background for navbar */
+    padding: 16px; /* Add some space around the content */
+    position: fixed; /* Fix the navbar to the top of the page */
+    width: 100%; /* Make navbar span the full width */
+    top: 0; /* Place it at the top */
+    left: 0; /* Align it to the left edge */
+    z-index: 10; /* Make sure it stays on top of other content */
+  }
+
+  /* Style for the list inside the navigation bar */
+  nav ul {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the list items */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  /* Style for each navigation link */
+  nav li {
+    margin: 0 20px; /* Add space between navigation items */
+  }
+
+  /* Style for the links inside the navbar */
+  nav a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Set font size */
+    transition: color 0.3s; /* Add smooth color transition on hover */
+  }
+
+  /* Hover effect for links in the navbar */
+  nav a:hover {
+    color: #f6ad55; /* Change link color when hovered */
+  }
+
+  /* Styling for each section in the page */
+  section {
+    padding: 40px 0; /* Add vertical padding to each section */
+    text-align: center; /* Center align text in each section */
+  }
+
+  /* Home section takes full viewport height */
+  #home {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex; /* Use flexbox for centering the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+  }
+
+  /* Style for the heading inside the Home section */
+  #home h1 {
+    font-size: 3rem; /* Set large font size */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+
+  /* Style for the "About" and "Constellation Legends" sections */
+  #about, #constellation-legends {
+    background-color: #2d3748; /* Dark background for sections */
+    padding: 60px 20px; /* Add padding for spacing */
+  }
+
+  /* Style for the heading inside the About and Legends sections */
+  #about h2, #constellation-legends h2 {
+    font-size: 2rem; /* Set medium font size */
+    color: #f6ad55; /* Set a bright yellow color */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+
+  /* Style for the list in the Constellation Legends section */
+  #constellation-legends ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+
+  /* Style for each item in the Constellation Legends list */
+  #constellation-legends li {
+    margin: 10px 0; /* Add space between each item */
+  }
+
+  /* Style for the sky section, where stars will be placed */
+  .sky {
+    position: relative; /* Relative positioning for stars inside this section */
+    height: 100vh; /* Set to take up 100% of the viewport height */
+  }
+
+  /* Style for each star */
+  .star {
+    position: absolute; /* Absolute positioning to place stars anywhere */
+    width: 10px; /* Set the size of the star */
+    height: 10px; /* Set the size of the star */
+    background-color: white; /* Make the star white */
+    border-radius: 50%; /* Make it round */
+    opacity: 0.8; /* Slightly transparent star */
+  }
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2rem; /* Reduce font size on small screens */
+    }
+  }
